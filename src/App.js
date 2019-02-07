@@ -11,9 +11,9 @@ class App extends Component {
         <header className="App-header">
           <Navbar />
         </header>
-      <footer>
-        <Footer />
-      </footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
