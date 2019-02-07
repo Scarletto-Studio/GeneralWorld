@@ -15,6 +15,8 @@ const List = Styled.li`
   margin: 10px;
   &:hover {
     background-color: white;
+    width: 100%;
+    height: 100%;
   }
 `
 
