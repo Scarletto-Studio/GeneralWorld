@@ -15,7 +15,7 @@ class Buttoness extends Component {
     render() {
         return(
             <div>
-                <Buttonna onClick={() => this.alertok()} />
+                <Buttonna />
             </div>
         )
     }
