@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom'
 import Home from '../pages/home.jsx'
 import World from '../pages/world.jsx'
 import Content from '../pages/content.jsx'
+import About from '../pages/about.jsx'
 // import './style/navbar.css'
 
 const Nav = Styled.ul`
@@ -11,7 +12,7 @@ const Nav = Styled.ul`
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: #f3d0d4;
 `;
 
 const List = Styled.li`
@@ -38,7 +39,7 @@ class Navbar extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/world" component={World} />
           <Route path="/content" component={Content} />
-          <Route path="/about" />
+          <Route path="/about" component={About} />
         </div>
       </div>
     );
