@@ -31,7 +31,7 @@ class Navibar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="danger" variant="dark">
+        <Navbar bg="danger" variant="light">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/world">World</Nav.Link>

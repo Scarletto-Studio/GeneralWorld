@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 
+const alertok = () => {
+    alert("Hello Baifern.")
+}
+
 const Buttonna = () => (
-  <div>
+  <div onClick={alertok}>
     <Button variant="primary">Baifern</Button>
   </div>
 )
 
 class Buttoness extends Component {
-    alertok() {
-        console.log("Hello Baifern.")
-    }
-
     render() {
         return(
             <div>
-                <Buttonna onClick={this.alertok.bind(this)} />
+                <Buttonna onClick={() => this.alertok()} />
             </div>
         )
     }
