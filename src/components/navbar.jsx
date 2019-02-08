@@ -1,40 +1,44 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
-import {Route} from 'react-router-dom'
-import Home from '../pages/home.jsx'
-import World from '../pages/world.jsx'
-import Content from '../pages/content.jsx'
-import About from '../pages/about.jsx'
+import React, { Component } from "react";
+import Styled from "styled-components";
+import { Route } from "react-router-dom";
+import {Navbar , Nav} from 'react-bootstrap'
+import Home from "../pages/home.jsx";
+import World from "../pages/world.jsx";
+import Content from "../pages/content.jsx";
+import About from "../pages/about.jsx";
 // import './style/navbar.css'
 
-const Nav = Styled.ul`
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f3d0d4;
-`;
+// const Nav = Styled.ul`
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//     background-color: #f3d0d4;
+// `;
 
-const List = Styled.li`
-  display: inline;
-  margin: 10px;
-  &:hover {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-  }
-`
+// const List = Styled.li`
+//   display: inline;
+//   margin: 10px;
+//   &:hover {
+//     background-color: white;
+//     width: 100%;
+//     height: 100%;
+//     text-decoration: none;
+//   }
+// `;
 
-class Navbar extends Component {
+class Navibar extends Component {
   render() {
     return (
       <div>
-        <Nav>
-          <List><a href="/">Home</a></List>
-          <List><a href="/world">World</a></List>
-          <List><a href="/content">Content</a></List>
-          <List><a href="/about">About Us</a></List>
-        </Nav>
+        <Navbar bg="danger" variant="dark">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/world">World</Nav.Link>
+            <Nav.Link href="/content">Content</Nav.Link>
+            <Nav.Link href="/about">About Us</Nav.Link>
+          </Nav>
+        </Navbar>
         <div>
           <Route exact path="/" component={Home} />
           <Route path="/world" component={World} />
@@ -46,4 +50,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Navibar;
