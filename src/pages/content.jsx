@@ -1,6 +1,7 @@
 import React , {Component} from 'react'
 import styled from 'styled-components'
-import './style/content.css'
+import Buttoness from '../components/button.jsx'
+import '../components/style/content.css'
 
 const Topic = styled.h1`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -22,6 +23,7 @@ class Content extends Component {
         return(
             <div>
                 <HeadContent />
+                <Buttoness />
             </div>
         )
     }

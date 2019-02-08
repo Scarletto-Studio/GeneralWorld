@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import Styled from "styled-components";
+import React, { Component } from "react"
+import Styled from "styled-components"
 import {Route} from 'react-router-dom'
+import Home from '../pages/home.jsx'
 import World from '../pages/world.jsx'
-import Content from '../components/content.jsx'
+import Content from '../pages/content.jsx'
 // import './style/navbar.css'
 
 const Nav = Styled.ul`
@@ -34,7 +35,7 @@ class Navbar extends Component {
           <List><a href="/about">About Us</a></List>
         </Nav>
         <div>
-          <Route path="/" />
+          <Route exact path="/" component={Home} />
           <Route path="/world" component={World} />
           <Route path="/content" component={Content} />
           <Route path="/about" />
